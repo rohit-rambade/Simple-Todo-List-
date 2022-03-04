@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Mulish&family=Poppins:wght@200&family=Roboto+Mono:wght@300;400;700&family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif';
+}
+body{
+    overflow: hidden;
+    background-color: aquamarine;
+
+    
+}
+.wrapper{
+    max-width: 405px;
+    margin:135px auto;
+    background: white;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+.task-input img{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px,-50%);
+}
+.task-input input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 20px 0 53px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999
+    
+
+}
+.task-input input::placeholder{
+    color: #bfbfbf;
+}
+
+
+.controls,li{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.controls{
+   
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.filters span{
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.filters span:first-child{
+    margin-left: 0;
+}
+
+.filters span.active{
+    color: #3c87ff;
+}
+.controls .clear-btn{
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 7px 13px;
+    background: #3c87ff;
+    cursor: pointer;
+}
+.task-box{
+    margin: 20px 25px;
+}
+.task-box .task{
+    font-size: 17px;
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+
+.task-box .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.task label{
+    display: flex;
+}
+.task-box input{
+    margin-top: 6px;
+    margin-left: 12px;
+}
